@@ -99,6 +99,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         status = true;
                         Toast.makeText(MainActivity.this, "Succesfully logged-In.", Toast.LENGTH_SHORT).show();
                     }
+                    else
+                    {
+                        btnSubmit.setClickable(false);
+                    }
 
                 } else {
                     Toast.makeText(MainActivity.this, "Password should be atleast 6 charecters.", Toast.LENGTH_SHORT).show();
